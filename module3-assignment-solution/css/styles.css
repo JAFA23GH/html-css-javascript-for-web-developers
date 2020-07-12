@@ -31,30 +31,36 @@ body{
   text-decoration: none;
 }
 
-#nav-list {
-  margin-top: 10px;   
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -40px;
 }
 
-#nav-list a {
-  color: #951C49;
-  text-align: center;  
+#nav-list {  
+  margin: 0;  
+  width: 100%;   
 }
 
 #nav-list a:hover {
-  background: #E7E7E7;
+  background: white;
 }
 
 #nav-list a span {
   font-size: 1.8em;
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid black;
+#nav-list a{
+	color: black;
+	font-weight: bold;
 }
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
+
+#chicken-nav, #beef-nav {
+	border-bottom: 2px solid black;
 }
+
 /* END HEADER */
 
 #page-title {
@@ -109,6 +115,13 @@ body{
 }
 
 @media (max-width: 767px){
+
+   #collapsable-nav {
+        padding: 0;
+        width: 100%;
+        background-color: #CACACA;
+        border-top: 2px solid black;    
+    }
 
 	#chicken-text, #beef-text, #sushi-text{	    
 		width: 84%;
